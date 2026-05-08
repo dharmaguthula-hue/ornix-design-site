@@ -119,14 +119,14 @@ const Hero = () => {
       {/* Loading bar */}
       {!ready && (
         <div className="absolute inset-0 z-30 flex flex-col items-center justify-center bg-black gap-4">
-          <img src="/assets/Logo.png" alt="ORNIX" className="w-16 h-16 object-contain animate-pulse filter drop-shadow-[0_0_20px_rgba(0,102,255,0.7)]" />
+          <img src="/assets/Logo.png" alt="ORNIX" className="w-16 h-16 object-contain animate-pulse filter drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]" />
           <div className="w-64 h-[1px] bg-white/10 relative overflow-hidden">
             <div
-              className="absolute top-0 left-0 h-full bg-ornix-blue transition-all duration-100"
+              className="absolute top-0 left-0 h-full bg-white transition-all duration-100"
               style={{ width: `${progress}%` }}
             />
           </div>
-          <span className="text-[10px] text-ornix-blue tracking-[0.4em] uppercase animate-pulse">
+          <span className="text-[10px] text-white tracking-[0.4em] uppercase animate-pulse">
             Loading {progress}%
           </span>
         </div>
@@ -146,19 +146,19 @@ const Hero = () => {
             <img
               src="/assets/Logo.png"
               alt="ORNIX"
-              className="w-10 h-10 object-contain filter drop-shadow-[0_0_15px_rgba(0,102,255,0.8)]"
+              className="w-10 h-10 object-contain filter drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]"
             />
-            <span className="text-[10px] tracking-[0.4em] text-ornix-blue uppercase font-medium">Original By Design</span>
+            <span className="text-[10px] tracking-[0.4em] text-white uppercase font-medium">Original By Design</span>
           </div>
 
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold tracking-tighter leading-[0.9] text-white mb-2">
             ORNIX
           </h1>
-          <div className="w-16 h-[2px] bg-ornix-blue mb-6" />
-          <p className="text-base md:text-lg text-gray-300 tracking-wider mb-2 font-light">
+          <div className="w-16 h-[2px] bg-white mb-6" />
+          <p className="text-base md:text-lg text-gray-400 tracking-wider mb-2 font-light">
             IF IT DOESN'T STAND OUT,
           </p>
-          <p className="text-base md:text-lg text-ornix-blue tracking-wider mb-10 font-bold">
+          <p className="text-base md:text-lg text-white tracking-wider mb-10 font-bold">
             IT DOESN'T LEAVE ORNIX.
           </p>
 
